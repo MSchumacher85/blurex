@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59e4a8db-8308-48b0-8042-00997f7a15c6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,9 +81,9 @@
     </option>
   </component>
   <component name="PhpDebugGeneral" listening_started="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="74" />
+    <option name="y" value="41" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
@@ -168,15 +168,15 @@
       <workItem from="1566130922470" duration="2493000" />
       <workItem from="1566285751361" duration="4539000" />
       <workItem from="1566463370765" duration="1949000" />
-      <workItem from="1566469064899" duration="650000" />
+      <workItem from="1566469064899" duration="1240000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98253000" />
+    <option name="totallyTimeSpent" value="98843000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="74" y="41" width="1382" height="744" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31694403" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

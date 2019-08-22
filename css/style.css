@@ -1,0 +1,505 @@
+body{
+
+    font-family: 'Montserrat', sans-serif;
+
+    min-width: 320px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+section{
+    padding:100px 0;
+}
+
+h4{
+    font-size: 42px;
+    font-family:'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    font-style: italic;
+}
+
+h3{
+    font-size: 52px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+/*----------------------------------------------------header---------------------------------------------------------*/
+.main-header{
+background: url("../img/header.jpg") center no-repeat;
+    background-size: cover;/*Масштабирует изображение с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или высоте блока.*/
+    height: 100vh;/*Высота изображения*/
+    min-height: 600px;
+    position: relative;
+}
+
+a.navbar-brand{
+    color: #ffffff;
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.main-header .navbar-toggler{
+    color:#fff;
+}
+
+.main-header ul li a{
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 600;
+}
+.main-header ul li a::after{/* Добавляем эфект подчеркивания при наведении*/
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    height: 1px;
+    transform: scale(0);
+    transition: all .2s;
+}
+.main-header ul li a:hover::after{
+    transform: scale(1);
+}
+
+.main-header-text{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    max-width: 650px;
+    color: #ffffff;
+    padding: 20px;
+}
+.main-header-buttons{
+    padding-left: 60px;
+}
+.btn-pink{
+    background-color: #f42267;
+}
+.btn-violet{
+    background-color:#783491;
+}
+.main-header-buttons .btn{
+    height: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-right: 20px;
+    margin-top: 30px;
+    opacity: .8;/*прозрачность*/
+    box-shadow: 0 4px 16px rgba(0,0,0,.35);
+    transition: all .5s;
+}
+.main-header-buttons .btn:hover{
+    color: #fff;
+    opacity: 1;
+}
+
+.btn{
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+/*--------------------------------------------------End header-----------------------------------------------------*/
+
+/*--------------------------------------------------.section watch-----------------------------------------------------*/
+.section-watch{
+    background: url("../img/World-Map.png") center no-repeat;
+    background-size: cover;
+}
+.section-watch h3, .section-watch h4{
+    color:#484848;
+}
+
+.section-watch .nav-pills .nav-link.active, .nav-pills .show > .nav-link:hover{
+    background: #f42267;
+    color: #ffffff;
+    box-shadow:0 4px 16px rgba(0,0,0,.35);
+}
+.section-watch .nav-pills .nav-link{
+    font-size: 13px;
+    color:#484848;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    margin-bottom: 30px;
+}
+.btn-shadow{
+    color: #ffffff !important;
+    box-shadow: 0 10px 0 #ff5990;
+    transition: all .5s;
+    border-radius: 10px;
+}
+.btn-shadow:hover{
+    background:#f42267;
+    box-shadow: 0 5px 0 #ff5990;
+}
+
+/*--------------------------------------------------END .section-watch------------------------------------------------*/
+
+/*--------------------------------------------------.section-progress------------------------------------------------*/
+.section-progress{
+    background: rgba(75, 45, 127, 1);;
+    color: #ffffff;
+    padding: 0;
+}
+.section-progress .col-md-4:hover{
+    background: #40286a;
+    transition: all .5s;
+}
+.section-progress .col-md-4{
+    padding-top:100px;
+    padding-bottom: 100px;
+}
+.section-progress i{
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+.num{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.section-progress h3{
+    font-size: 25px;
+    height: 72px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.section-progress h3 span{
+    font-size: 30px;
+}
+.section-progress p{
+    font-size: 15px;
+    color:#a49aba;
+    font-weight: 600;
+}
+.section-design h5{
+    font-size: 25px;
+    font-weight: 600;
+}
+/*--------------------------------------------------END .section-progress------------------------------------------------*/
+
+/***************************************************.section-lets ******************************************************/
+.section-lets{
+    background: url("../img/lets.png");
+    color: #ffffff;
+}
+/***************************************************END .section-lets **************************************************/
+
+/***************************************************.section-design**************************************************/
+.section-design{
+    color:#484848;
+}
+.section-design h4{
+    font-size: 34px;
+}
+
+.section-design p{
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.section-design .col-lg-6 .row .col-md-6 p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.section-design span i{
+    font-size: 70px;
+    margin-bottom: 10px;
+    background: linear-gradient(to top right, rgba(225, 24, 110, 1.0), rgba(23, 11, 168, 1.0));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.video-wrapper {
+    position: relative;
+    border-radius: 10px;
+}
+#videoPlayBtn {
+    width: 100%;
+    height: 100%;
+    background: url("../img/play.png") center center no-repeat;
+    z-index: 1000;
+    position: absolute;
+    top:0;
+    cursor: pointer;
+}
+/***************************************************END .section-design **************************************************/
+
+/***************************************************END .section-work **************************************************/
+.section-work{
+    background: #f1f1f1;
+}
+
+.section-work .nav-pills .nav-link.active, .nav-pills .show > .nav-link:hover{
+    background: #f42267;
+    color: #ffffff;
+    box-shadow:0 4px 16px rgba(0,0,0,.35);
+}
+.section-work .nav-pills .nav-link{
+    font-size: 13px;
+    color:#484848;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    margin-bottom: 30px;
+}
+
+.section-work nav{
+    margin-bottom: 50px;
+    margin-top: 80px;
+}
+
+.gallery-item{
+    padding-bottom: 20px;
+}
+
+.gallery a img{
+    transition: .5s;
+}
+.gallery a:hover img{
+    box-shadow: 10px 10px 30px -10px rgba(0,0,0,.75);
+}
+/***************************************************END .section-work **************************************************/
+
+/***************************************************.section-brand **************************************************/
+.section-brands{
+    background: #4b2d7f;
+}
+
+.section-brands a img{
+    margin-bottom: 20px;
+}
+/***************************************************END .section-brand **************************************************/
+
+/***************************************************.section-reviews **************************************************/
+.section-reviews{
+    background: url("../img/reviews.png");
+    padding-bottom: 0;
+    padding-top: 17px;
+}
+/***************************************************END .section-reviews *************************************************/
+
+/* Large Device, Wide Screens */
+@media only screen and (max-width: 1200px){
+
+}
+
+/* Medium Device, Desktops */
+@media only screen and (max-width: 992px){
+
+
+}
+@media only screen and (max-width: 991px){
+    .main-header .navbar-nav{
+        position: relative;
+        z-index: 1;
+        background: linear-gradient(to top right, rgba(255, 1, 30, 1.0), rgba(63, 4, 198, 1.0));
+        padding:0 10px;
+    }
+    .main-header ul li a{
+        padding-left:10px !important;
+        padding-right:10px !important;
+    }
+    .main-header .navbar-nav{
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    .main-header ul li a:hover::after{
+        transform: scale(0);
+    }
+    .main-header ul li a:hover{
+        background: rgba(0,123,255,.1);
+    }
+
+     .section-watch, .section-lets, .section-design, .section-work, .section-brands {
+         padding: 5px 0;
+     }
+
+     .section-progress .col-md-4{
+         padding-top: 10px;
+         padding-bottom: 10px;
+     }
+
+
+
+}
+
+@media only screen and (max-width: 950px){
+    .main-header-text{
+        background: linear-gradient(to top right, rgba(255, 1, 30, 0.1), rgba(63, 4, 198, 0.3));
+        max-width: 100%;
+        left: 0;
+    }
+}
+
+/*Small Device, Tablets */
+@media only screen and (max-width: 768px) {
+    h4 {
+        font-size: 22px;
+        margin-bottom: 5px;
+    }
+
+    h3 {
+        font-size: 32px;
+        margin-bottom: 5px;
+    }
+
+    .main-header-text .main-header-buttons {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .main-header-text {
+        top: 10%;
+        margin-top: 7px;
+        padding-top: 0;
+        padding-bottom: 5px;
+    }
+    /**********************************************************************************/
+
+    .section-watch .nav-pills .nav-link {
+        padding: 8px 20px;
+        margin-bottom: 5px;
+    }
+    /**********************************************************************************/
+
+    .section-progress i {
+        font-size: 50px;
+    }
+
+    .num {
+        font-size: 18px;
+    }
+    .section-progress h3{
+        font-size: 18px;
+        height:auto;
+        overflow: hidden;
+    }
+
+    .section-progress h3 span{
+        font-size: 23px;
+    }
+
+    .section-progress p{
+        margin-bottom:5px ;
+    }
+
+    .section-progress p, .section-lets p{
+        font-size: 10px;
+    }
+
+    /**********************************************************************************/
+    .section-design p{
+        margin-bottom: 7px;
+    }
+
+    .section-design span i{
+        font-size: 50px;
+    }
+
+    .section-design .btn-shadow{
+        margin-bottom: 5px;
+    }
+
+    .section-design p{
+        font-size: 13px;
+    }
+    .section-design .col-lg-6 .row .col-md-6 p{
+        font-size: 10px;
+    }
+    /**********************************************************************************/
+    .section-work .nav-pills .nav-link{
+        margin-bottom: 0;
+    }
+
+    .section-work nav{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    /**********************************************************************************/
+
+}
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (max-width: 480px) {
+        .main-header .navbar-brand {
+            font-size: 30px;
+        }
+
+        .section-work .nav-pills .nav-link{
+            width: 100%;
+            margin: 2px 0;
+            text-align: left;
+        }
+    }
+
+    @media only screen and (max-width: 428px) {
+        .main-header .main-header-buttons .btn {
+            width: 100%;
+            margin: 5px 0;
+        }
+
+        .main-header .main-header-buttons .btn:last-child {
+            margin: 5px 0;
+        }
+
+        h4 {
+            font-size: 18px;
+        }
+
+        h3 {
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 10px;
+        }
+
+        .main-header .navbar-brand {
+            font-size: 20px;
+        }
+
+        .main-header-text .main-header-buttons .btn {
+            font-size: 14px;
+            height: 33px;
+        }
+
+        .main-header {
+            max-height: 500px;
+        }
+
+        .main-header-text {
+            margin-top: 15px;
+        }
+
+        .section-watch .nav-pills .nav-link {
+            font-size: 14px;
+        }
+    }
+
+    @media only screen and (max-width: 386px) {
+        .section-watch .nav-pills .nav-link {
+            width: 100%;
+            font-size: 10px;
+            padding: 5px;
+            margin-bottom: 3px;
+        }
+
+        .btn-shadow {
+            font-size: 12px;
+            box-shadow: 0 5px 0 #ff5990;
+        }
+
+        .btn-shadow:hover {
+            background: #f42267;
+            box-shadow: 0 0 0 #ff5990;
+        }
+
+        .section-work .nav-pills .nav-link {
+            font-size: 10px;
+            padding: 5px;
+            margin-bottom: 3px;
+        }
+    }

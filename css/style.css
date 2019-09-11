@@ -272,13 +272,35 @@ a.navbar-brand{
 }
 /***************************************************END .section-brand **************************************************/
 
-/***************************************************.section-reviews **************************************************/
-.section-reviews{
-    background: url("../img/reviews.png");
+/***************************************************.section-quote **************************************************/
+.section-quote{
+    background: url("../img/reviews.png") center no-repeat;
+    background-size: cover;
     padding-bottom: 0;
     padding-top: 17px;
 }
-/***************************************************END .section-reviews *************************************************/
+.section-quote .carousel-caption{
+    top:5%;
+    bottom: auto;
+    text-align: left;
+}
+.section-quote .carousel-caption .blockquote{
+    font-style: italic;
+    font-size: 22px;
+    position: relative;
+    padding-left: 55px;
+    padding-top: 20px;
+}
+.section-quote .carousel-caption .blockquote::before{
+    position: absolute;
+    content: ' \201C';
+    font-size: 150px;
+    top:-75px;
+    left: -20px;
+    color: #f42267;
+}
+
+/***************************************************END .section-quote *************************************************/
 
 /* Large Device, Wide Screens */
 @media only screen and (max-width: 1200px){
@@ -312,7 +334,7 @@ a.navbar-brand{
         background: rgba(0,123,255,.1);
     }
 
-     .section-watch, .section-lets, .section-design, .section-work, .section-brands {
+     .section-watch, .section-lets, .section-design, .section-work, .section-brands, .section-quote {
          padding: 5px 0;
      }
 
@@ -420,7 +442,25 @@ a.navbar-brand{
 
     /**********************************************************************************/
 
+    .section-quote .carousel-caption .blockquote{
+        font-size: 13px;
+    }
+    /**********************************************************************************/
+    .section-quote .carousel-caption .blockquote::before{
+        font-size: 100px;
+        top: -40px;
+    }
+    .section-quote .carousel-caption .blockquote{
+        padding-left: 30px;
+    }
+
 }
+    /*****************************************************************************************************/
+    @media only screen and (max-width: 575px) {
+        .section-quote .carousel-caption{
+            position: static !important;
+        }
+    }
 
     /* Extra Small Devices, Phones */
     @media only screen and (max-width: 480px) {

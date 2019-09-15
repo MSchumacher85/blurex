@@ -9,6 +9,10 @@ $(document).ready(function(){/*Увеличиваем размер первог�
 $(document).ready(function () {
     baguetteBox.run('.gallery');/*Вызываем для класса .gallery наш плагин галлереи*/
 });
+
+$(document).ready(function () {
+    baguetteBox1.run('.footer_gallery');/*Вызываем для класса .footer_gallery наш плагин галлереи*/
+});
 /**************************Стилизуем кнопку для ютуба ****************************************/
 function onYouTubeIframeAPIReady() {
     var iStatus;

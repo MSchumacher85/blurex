@@ -302,6 +302,171 @@ a.navbar-brand{
 
 /***************************************************END .section-quote *************************************************/
 
+/*********************************************** .section-form********************************************/
+.section-form{
+    background:url("../img/shape.jpg") center no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.section-form h3{
+    margin-bottom:0;
+}
+.section-form h4{
+    font-size: 32px;
+}
+.section-form h4{
+    font-style: normal;
+}
+
+.section-form p{
+    margin-top: 25px;
+    margin-bottom: 60px;
+}
+
+.section-form .btn-violet{
+    background:#4b2d7f;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-color: #4b2d7f;
+}
+
+.section-form .btn-violet.btn-shadow{
+    background:#4b2d7f;
+    box-shadow: 0 7px 0 #a57ee9;
+    transition: all .5s;
+    border-radius: 10px;
+    height: 45px;
+    margin-bottom: 10px;
+}
+
+.section-form .form-control{
+    height: 50px;
+}
+.section-form .btn-violet.btn-shadow:hover{
+    background:#4b1d7f;
+    box-shadow: 0 5px 0 #a57ee9;
+}
+
+.section-form .form-control{
+    color: #fff;
+    background: rgba(255,255,255,.35);
+    border: none;
+}
+.section-form .form-control::placeholder{
+    color: #fff;
+}
+
+.section-form .form-control{
+    padding-left: 40px;
+    margin-bottom: 10px;
+}
+.section-form .form-control:focus {
+    box-shadow: 0 0 0 3px rgba(255,255,255,.25);
+}
+/*********************************************** END .section-form****************************************/
+/***********************************************.section-social*******************************************/
+.section-social{
+    background: #4b2d7f;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+}
+.section-social .nav-item a{
+    color: #fff;
+    font-size: 27px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.section-social .nav-item a:hover{
+    color: #7647c7;
+    transition: .5s;
+}
+.section-social .nav-item{
+    border-left: 2px solid #7647c7;
+}
+.section-social .nav-item:first-child{
+    border-left: none;
+}
+/*********************************************END .section-social*****************************************/
+/*********************************************END .footer*************************************************/
+.footer{
+    font-family: 'Poppins', sans-serif;
+    background: url("../img/World-Map.png") center no-repeat;
+    background-size: cover;
+    padding:100px 0;
+    z-index: 2;
+    position: relative;
+    margin-bottom: -75px;
+}
+.footer .col-6{
+    padding:15px;
+}
+
+.footer h5{
+    font-weight: 700;
+    font-size: 25px;
+    color: #4b2d7f;
+}
+.footer li a{
+    color: #171717;
+    font-size: 15px;
+    font-weight: 600;
+}
+.footer ul{
+    list-style: none;
+    padding-left: 15px;
+}
+/*********************************************END .footer*************************************************/
+/*********************************************.section-copyright******************************************/
+.section-copyright{
+    background: #f6f6f6;
+    padding: 55px 0;
+    font-family: 'Poppins', sans-serif;
+    z-index: 1;
+    font-weight: 600;
+    font-size: 19px;
+    color: #171717;
+}
+.section-copyright ul li a::before{
+    content:"\00B7";
+    display: inline-block; /* Расстояние между точкой и текстом */
+    width: 16px; /* Задать значение расстояния */
+}
+.section-copyright ul li span,.section-copyright ul li{
+    padding-right: 0;
+}
+
+.section-copyright ul li a{
+    color: #171717;
+}
+/*********************************************END .section-copyright*************************************/
+/********************************************.scroll-to-top **********************************************************/
+.scroll-to-top{
+    position: fixed;
+    z-index: 2000;
+    bottom:0;
+    right: 0;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 4px;
+    background: #da1757;
+    transition: all .5s;
+    font-size: 32px;
+    cursor: pointer;
+    display: none;
+}
+.scroll-to-top:hover{
+    background: #fff;
+    text-decoration: none;
+    outline: none;
+    color: #da1757;
+    border: 1px solid #da1757;
+}
+/**********************************************EMD .scroll-to-top*************************************/
+
 /* Large Device, Wide Screens */
 @media only screen and (max-width: 1200px){
 
@@ -334,7 +499,7 @@ a.navbar-brand{
         background: rgba(0,123,255,.1);
     }
 
-     .section-watch, .section-lets, .section-design, .section-work, .section-brands, .section-quote {
+     .section-watch, .section-lets, .section-design, .section-work, .section-brands, .section-quote, .section-form, .section-social, .footer, .section-copyright{
          padding: 5px 0;
      }
 
@@ -343,8 +508,13 @@ a.navbar-brand{
          padding-bottom: 10px;
      }
 
+     .section-social .nav-item a{
+         font-size: 16px;
+     }
 
-
+    .footer{
+        margin-bottom: 0;
+    }
 }
 
 @media only screen and (max-width: 950px){
@@ -455,6 +625,40 @@ a.navbar-brand{
     }
 
 }
+    /*****************************************************************************************************/
+    @media only screen and (max-width: 767px) {
+        .section-form .btn-violet.btn-shadow{
+            margin-left: 12px;
+            height: auto;
+        }
+
+        .section-form p{
+            margin-top: 10px;
+            margin-bottom: 14px;
+        }
+        .section-form .form-control{
+            height: auto;
+        }
+
+        .footer .col-6{
+            padding: inherit;
+        }
+        .footer h5{
+            font-size: 17px;
+        }
+        .section-copyright{
+            font-size: 16px;
+        }
+        .section-copyright ul li a::before{
+            width: 8px; /* Задать значение расстояния */
+        }
+        .section-copyright li{
+            padding: 0;
+        }
+        .section-copyright a{
+            padding: 2px 4px;
+        }
+    }
     /*****************************************************************************************************/
     @media only screen and (max-width: 575px) {
         .section-quote .carousel-caption{
